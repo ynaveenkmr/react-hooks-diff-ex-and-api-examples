@@ -14,6 +14,9 @@ import ClassCountBySettingInterval from './CountBySettingInterval/ClassCountBySe
 import HookCountBySettingInterval from './CountBySettingInterval/HookCountBySettingInterval'
 import UseReducer from './UseReducer/UseReducer'
 import FetchApi from './FetchAPI/FetchApi'
+import HooksTwoWayDataBinding from './TwoDataBinding/HooksTwoWayDataBinding'
+import ClassTwoWayDataBinding from './TwoDataBinding/ClassTwoWayDataBinding'
+
 
 
 import './style.css';
@@ -28,7 +31,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+        <div>
+        <HooksTwoWayDataBinding />
+        <ClassTwoWayDataBinding />
+        <br />
+        <hr />
         <SimpleForm />
         <HooksTodo />
         <br />
